@@ -1,8 +1,8 @@
 /* Asterisk wildcard selector to override defauylt styles added by the browser */
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* General styles*/
@@ -12,8 +12,9 @@ body {
     flex-direction: column;
     /* Generic project styles */
     color: #3a3a3a;
-    font-family: 'Lato' , sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -36,20 +37,20 @@ header a {
 
 
 h1 {
-   font-family: 'Oswald' , sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   color: #252525;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
 
 #menu {
-font-size: 110%;
-letter-spacing: 4px;
-list-style-type: none;
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
 
 }
 
-#menu > li {
+#menu>li {
 
     margin-bottom: 2em;
 }
@@ -72,15 +73,15 @@ nav {
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
-display: block;
+    display: block;
 }
 
 #nav-toggle {
-    display:none
+    display: none
 }
 
-.nav-toggle-label{
-font-size: 2rem;
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main content */
@@ -93,11 +94,12 @@ main {
 
 /* Footer */
 footer {
-background-color: orange;
+    background-color: orange;
 }
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -109,9 +111,9 @@ background-color: orange;
 
     #menu {
         display: flex;
-    } 
-    
-    #menu > li {
+    }
+
+    #menu>li {
         padding-left: 1rem;
     }
 
@@ -126,8 +128,15 @@ background-color: orange;
     }
 
     /* Main content */
-    main{
+    main {
         /* Push main content down to accommodate larger header */
         margin-top: 100px;
     }
+}
+/* Large devies (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+    
 }
