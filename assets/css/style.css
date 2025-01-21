@@ -246,7 +246,8 @@ list-style-type: none;
 
 @media screen and (min-width: 1200px)  {
     /* Reasons section */
-    #benefits: flex;
+    #benefits {
+    display: flex;
     flex-direction: row;
 }
 
